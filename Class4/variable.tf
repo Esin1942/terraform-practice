@@ -21,8 +21,11 @@ variable "instance_type" {
   description = "Please provide instance type"
 }
 # Sec group variables
-variable "name" {}
+variable "sec_group_name" {}
 variable "description" {}
 variable "from_port" {}
 variable "to_port" {}
-variable "allowed_hosts" {}
+variable "allowed_hosts" {
+  type        = list(any)
+  description = "please provide list of IPs"
+}
