@@ -20,3 +20,9 @@ variable "instance_type" {
   type        = string
   description = "Please provide instance type"
 }
+# Sec group variables
+variable "name" {}
+variable "description" {}
+variable "from_port" {}
+variable "to_port" {}
+variable "allowed_hosts" {}
