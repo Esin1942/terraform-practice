@@ -1,4 +1,4 @@
-region     = "us-east-1"
+region     = "eu-west-1"
 key_name   = "bob"
 public_key = "~/.ssh/id_rsa.pub"
 

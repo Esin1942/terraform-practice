@@ -1,6 +1,7 @@
 variable "region" {
   type        = string
   description = "please provide your region"
+  default = "eu-west-1"
 }
 variable "key_name" {
   type        = string
@@ -9,6 +10,7 @@ variable "key_name" {
 variable "public_key" {
   type        = string
   description = "please provide your public_key"
+  default = "~/.ssh/id_rsa.pub"
 }
 variable "key_tags" {
   type        = map(string)
