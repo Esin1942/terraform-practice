@@ -10,3 +10,7 @@ variable "public_key" {
   type        = string
   description = "please provide your public_key"
 }
+variable "key_tags" {
+  type        = map(string)
+  description = "please provide your tags"
+}
