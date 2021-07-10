@@ -1,6 +1,4 @@
-provider "aws" {
-  region = "us-east-1"
-}
+
 
 resource "aws_iam_user" "bob" {
   name = "bob"
@@ -12,10 +10,7 @@ resource "aws_iam_user" "sam" {
 
 }
 
-resource "aws_iam_group" "billing" {
-  name = "billing"
 
-}
 resource "aws_iam_group_membership" "team" {
   name = "billing-membership"
 
