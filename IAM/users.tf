@@ -21,3 +21,7 @@ resource "aws_iam_group_membership" "team" {
 
   group = aws_iam_group.billing.name
 }
+resource "aws_iam_policy_attachment" "test-attach" {
+  groups     = aws_iam_group.billing.name
+  policy_arn = aws_iam_policy.policy.arn
+}
